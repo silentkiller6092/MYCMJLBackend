@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "carusal_images",
+  "info": {
+    "singularName": "carusal-image",
+    "pluralName": "carusal-images",
+    "displayName": "CarusalImage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AddMultipleImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

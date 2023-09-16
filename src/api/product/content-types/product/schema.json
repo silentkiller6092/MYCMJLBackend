@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "AvilableQty": {
+      "type": "integer"
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Gold 22KT",
+        "Gold 20KT",
+        "Gold 18KT",
+        "Diamond 18KT",
+        "Diamond 14KT"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "Gift": {
+      "type": "text",
+      "default": "Capture the joy of giving with this thoughtful Gift. It's a perfect expression of appreciation, love, or celebration. The [item name] is a symbol of thoughtfulness that's sure to bring smiles and warm hearts. Make moments memorable with this heartfelt gesture.",
+      "required": false
+    },
+    "Usage": {
+      "type": "string",
+      "default": "Elevate your style with these [Metal] Earrings. Their [gemstone or design] exudes charm and versatility, making them an ideal choice for any occasion. Add a touch of elegance to your look effortlessly."
+    },
+    "Precaution": {
+      "type": "string",
+      "default": "Protect your jewelry: Avoid chemicals, store separately, remove during activities, clean gently, check settings, shield from extreme temperatures, and remove before sleeping."
+    }
+  }
+}

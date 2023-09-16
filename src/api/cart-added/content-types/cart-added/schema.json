@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cart_addeds",
+  "info": {
+    "singularName": "cart-added",
+    "pluralName": "cart-addeds",
+    "displayName": "cartAdded",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "ImageUrl": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "integer"
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}
